@@ -18,8 +18,8 @@ class CreateConductorsTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('licence');
-            $table->string('identification');
+            $table->string('licencia');
+            $table->string('cedula');
             $table->rememberToken();
             $table->string("state");
             $table->timestamps();

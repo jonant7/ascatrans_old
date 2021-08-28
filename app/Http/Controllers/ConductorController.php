@@ -23,8 +23,8 @@ class ConductorController extends Controller
     }
 
     public function store(StoreConductor $request){
-        if($request->hasFile('licence')){
-            $file = $request->file('licence');
+        if($request->hasFile('licencia')){
+            $file = $request->file('licencia');
             $name = time().'.'.$file->guessExtension();
             $path = public_path('img/'.$name);
         }
@@ -33,8 +33,8 @@ class ConductorController extends Controller
         $conductor = new Conductor();
         $conductor->name = $request->name.' '.$request->lastname;
         $conductor->email = $request->email;
-        $conductor->identification = $request->identification;
-        $conductor->licence = $path;
+        $conductor->cedula = $request->identification;
+        $conductor->licencia = $path;
         $conductor->password = '123456';
         $conductor->state = 'active';
 

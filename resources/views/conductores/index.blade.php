@@ -24,8 +24,8 @@
                     <th scope="row">{{$conductor->id}}</th>
                     <td><a class="text-blue-800 hover:text-blue-600" href="{{route ('conductores-show', $conductor->id)}}">{{$conductor->name}}</a></td>
                     <td class="text-gray-900">{{$conductor->email}}</td>
-                    <td class="text-gray-900">{{$conductor->identification}}</td>
-                    <td><a class="text-blue-800 hover:text-blue-600" href="{{$conductor->licence}}">Ver licencia</a></td>
+                    <td class="text-gray-900">{{$conductor->cedula}}</td>
+                    <td><a class="text-blue-800 hover:text-blue-600" href="{{$conductor->licencia}}">Ver licencia</a></td>
                     <td class="text-gray-900"><div class="{{$conductor->state}}">{{$conductor->state}}</div></td>
                     <td><i class="fas fa-ellipsis-v text-gray-400"></i></td>
                 </tr>

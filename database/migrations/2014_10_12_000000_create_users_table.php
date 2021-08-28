@@ -15,11 +15,17 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('token_firebase');
+            $table->string('sistema_operativo');
+            $table->tinyText('firebase_state');
             $table->rememberToken();
+            $table->foreignId('tipo_id')->constrained('tipos');
+            $table->tinyText("state");
             $table->timestamps();
         });
     }

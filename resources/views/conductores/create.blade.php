@@ -29,7 +29,7 @@
             <div class="grid">
                 ver
                 <label for="formFile" class="form-label">Licencia</label>
-                <input class="form-input rounded-md" type="file" id="formFile" name="licence">
+                <input class="form-input rounded-md" type="file" id="formFile" name="licencia">
             </div>
             <div class="text-center">
                 <button type="submit" class="bg-green-500 text-white rounded-md p-2 px-8">CREAR USUARIO</button>
